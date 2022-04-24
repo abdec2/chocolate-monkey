@@ -1,0 +1,115 @@
+.hero-wrapper {
+    height: 500px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #50251f;
+    position: relative;
+    
+}
+
+.hero-wrapper::before {
+    position: absolute;
+    content:"";
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background-image:url(https://cdn.coingape.com/wp-content/uploads/2021/09/06104550/Bored-Ape-Yacht-Club-NFT.webp);
+    background-position: center;
+    background-size: contain;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: -2;
+    
+}
+
+.hero-wrapper::after {position: absolute;
+    content:"";
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.hero-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+/*             background: rgb(60, 65, 68); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    ;
+}
+
+.hero-content {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-wrapper div h1 {
+    margin: 0;
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.hero-wrapper p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-wrapper .btns a {
+    padding: 15px 50px;
+    background: #d2ad9d;
+    border: none;
+    outline: none;
+    color: #50251f;
+    font-size: 20px;
+    margin: 20px 5px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+}
+
+.hero-wrapper .btns a:hover {
+    background: #fbd7b4
+}
+
+.hero-section h1{
+    color: #50251f;
+}
+@media screen and (max-width:530px) {
+    .hero-content {
+        padding: 15px;
+    }
+    .hero-wrapper div h1 {
+        font-size: 28px;
+    }
+    .hero-wrapper div p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .hero-wrapper button {
+        padding: 12px 25px;
+        font-size: 16px;
+        margin: 0px 2px;
+    }
+
+}

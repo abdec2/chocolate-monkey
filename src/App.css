@@ -1,0 +1,343 @@
+.spacer {
+  height: 40px;
+  width: 100%;
+}
+
+.hero-section {
+  padding: 100px 0 10px;
+
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.team-card-box-shadow {
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5) !important;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5) !important;
+  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5) !important;
+}
+
+.story-area {
+  position: relative;
+  padding: 100px 0;
+}
+
+.mission-area {
+  position: relative;
+  padding: 100px 0;
+}
+
+.roadmap-area {
+  position: relative;
+  padding: 100px 0;
+}
+
+.popular-collections-area {
+  position: relative;
+  padding: 50px 0;
+}
+
+.custom-shape-divider-top-1650029470 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  opacity: 0.1;
+}
+
+.custom-shape-divider-top-1650029470 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 138px;
+}
+
+.custom-shape-divider-top-1650029470 .shape-fill {
+  fill: #FFFFFF33;
+}
+
+.story-area .intro h3::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  font-size: 50px;
+  content: 'THE CHOCOLATE MONKEYS';
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.mission-area .intro h3::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  font-size: 60px;
+  content: 'MISSION';
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.roadmap-area .intro h3::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  font-size: 60px;
+  content: 'ROADMAP';
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.roadmap-innr {
+  max-width: 300px;
+  padding: 0 25px 30px;
+}
+
+.roadmap-innr ul {
+  list-style: none;
+  padding-left: 0;
+}
+.roadmap-item {
+  position: relative;
+}
+
+.roadmap-list .roadmap-item .roadmap-innr::before {
+  position: absolute;
+  left: 0;
+  height: 105%;
+  width: 2px;
+  content: '';
+  transform: translateX(-50%);
+  background-image: linear-gradient(to bottom, #2b56f5 0%, #7a0fff 100%);
+}
+
+.roadmap-list .roadmap-item:last-child .roadmap-innr::before {
+  position: absolute;
+  left: 0;
+  height: 105%;
+  width: 2px;
+  content: '';
+  transform: translate(-50%, calc(-10% + 10px));
+  background-image: linear-gradient(to bottom, #2b56f5 0%, #7a0fff 100%);
+}
+
+
+.roadmap-list .roadmap-item:last-child::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100vw;
+  height: 2px;
+  background: #7a0fff;
+  transform: translateX(-50%);
+
+}
+
+
+
+.roadmap-title-s2:before {
+  position: absolute;
+  content: '';
+  left: 0px;
+  transform: translate(-50%, 0);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #2b56f5;
+  border: 1px solid #2b56f5;
+}
+
+.popular-collections-area .intro h3::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  font-size: 100px;
+  content: 'TEAM';
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.popular-collections-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./../public/assets/img/bg/dot-a.png');
+  background-repeat: repeat-x;
+  z-index: -10;
+  opacity: 0.2;
+  background-position: center;
+}
+
+.mission-area h5::before {
+  position: absolute;
+  content: attr(data-no);
+  color: white;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, calc(-50% + 10px));
+
+}
+
+.mission-area p,
+.mission-area ul {
+  margin: 1.5rem 0;
+}
+
+.footer-area {
+  background: rgba(0, 0, 0, 0.911);
+}
+
+.footer-area ul {
+  list-style: none;
+}
+
+.social-icons1 svg{
+  color: white !important;
+}
+
+ul.social-icon-list li:nth-child(even) {
+  margin: auto 20px;
+}
+
+a.social-icons:hover {
+  box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.poweredby p, .poweredby p a{
+  font-size: 14px !important;
+}
+
+.poweredby p a {
+  color: #2b56f5 !important;
+}
+
+.poweredby p a:hover {
+  color: rgb(11, 155, 252) !important;
+}
+
+.logo-footer {
+  max-width: 300px;
+}
+
+.nftCalender {
+  max-width: 200px;
+}
+.nftCalender img {
+  width: 100%;
+}
+
+.minting-area {
+  position: relative;
+  padding: 100px 0;
+}
+.minting-area .intro h3::before {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.03;
+  font-size: 60px;
+  content: 'MINT YOUR NFTs';
+  transform: translate(0%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.btn-mint-count {
+  background:rgba(255, 255, 255, 0);
+  clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 99%, 0 18%);
+  border: 2px solid rgba(105, 105, 105, 0.3);
+  color: white;
+  position: relative;
+}
+
+.btn-mint-count:hover {
+  /* background: rgba(255, 255, 255, 0.1); */
+}
+
+.btn-mint-count:focus {
+  outline: none;
+}
+
+.error {
+  z-index: 1000;
+  border-radius: 0;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 460px) {
+  .shape {
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 680px) {
+  .shape {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .shape {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .roadmap-list {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .roadmap-list .roadmap-item .roadmap-innr::before {
+    height: calc(90% + 2px);
+    
+  }
+
+  .roadmap-list .roadmap-item:first-child .roadmap-innr::before {
+    height: calc(90% + 26px);
+    
+  }
+
+  .roadmap-list .roadmap-item:last-child .roadmap-innr::before {
+    height: calc(90%);
+    top:15%;
+    
+  }
+
+  .roadmap-list .roadmap-item:last-child::after {
+    left:-85%;
+    
+  }
+}
