@@ -26,7 +26,7 @@ function App() {
           <HeaderComponent error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />
           <Hero />
           <Story />
-          {/* <Mission /> */}
+          <Mission />
           {/* <Team /> */}
           {/* <Roadmap /> */}
           {/* <Mint /> */}

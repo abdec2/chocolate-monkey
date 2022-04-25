@@ -18,15 +18,7 @@
   -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5) !important;
 }
 
-.story-area {
-  position: relative;
-  padding: 100px 0;
-}
 
-.mission-area {
-  position: relative;
-  padding: 100px 0;
-}
 
 .roadmap-area {
   position: relative;
@@ -59,33 +51,7 @@
   fill: #FFFFFF33;
 }
 
-.story-area .intro h3::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.03;
-  font-size: 50px;
-  content: 'THE CHOCOLATE MONKEYS';
-  transform: translate(0%, -50%);
-  white-space: nowrap;
-  overflow: hidden;
 
-}
-
-.mission-area .intro h3::before {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.03;
-  font-size: 60px;
-  content: 'MISSION';
-  transform: translate(0%, -50%);
-  white-space: nowrap;
-  overflow: hidden;
-
-}
 
 .roadmap-area .intro h3::before {
   position: absolute;
@@ -189,24 +155,6 @@
   background-position: center;
 }
 
-.mission-area h5::before {
-  position: absolute;
-  content: attr(data-no);
-  color: white;
-  left: 0;
-  height: 40px;
-  width: 40px;
-  border: 2px solid white;
-  display: grid;
-  place-items: center;
-  transform: translate(-50%, calc(-50% + 10px));
-
-}
-
-.mission-area p,
-.mission-area ul {
-  margin: 1.5rem 0;
-}
 
 .footer-area {
   background: rgba(0, 0, 0, 0.911);
