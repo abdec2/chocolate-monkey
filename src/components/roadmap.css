@@ -1,0 +1,138 @@
+
+ /* chocolatemonkeys-com.mail.protection.outlook.com. */
+.roadmap-area {
+    position: relative;
+    padding: 100px 0;
+}
+
+
+.roadmap-area .intro h3::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    font-size: 60px;
+    content: 'ROADMAP';
+    transform: translate(0%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.roadmap-innr h6 {
+    margin: 0;
+}
+
+.roadmap-innr {
+    max-width: 300px;
+    padding: 0 25px 30px;
+}
+
+.roadmap-innr ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.roadmap-item {
+    position: relative;
+}
+
+.roadmap-list .roadmap-item .roadmap-innr::before {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    content: '';
+    transform: translateX(-50%);
+    background: #50251f;
+}
+
+.roadmap-list .roadmap-item:last-child .roadmap-innr::before {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 2px;
+    content: '';
+    transform: translate(-50%, calc(-10% + 10px));
+    background: #50251f;
+}
+
+
+.roadmap-list .roadmap-item:last-child::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100vw;
+    height: 2px;
+    background: #50251f;
+    transform: translateX(-50%);
+
+}
+
+
+
+.roadmap-title-s2:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    transform: translate(-50%, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #50251f;
+    border: 1px solid #50251f;
+}
+
+@media (min-width: 992px) {
+
+    .roadmap-item {
+        width: 30%;
+        margin-left: 30%;
+    }
+
+    .roadmap-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roadmap-list .roadmap-item.roadmap-bottom .roadmap-innr {
+        transform: translateX(-100%);
+    }
+    .roadmap-list .roadmap-item.roadmap-bottom {
+        text-align: right;
+    }
+    .roadmap-list .roadmap-item.roadmap-bottom .roadmap-innr::before {
+        position: absolute;
+        left: auto;
+        right: 2px;
+        height: 100%;
+        width: 2px;
+        content: '';
+        transform: translateX(3px);
+        background: #50251f;
+    }
+
+    .roadmap-list .roadmap-item.roadmap-bottom .roadmap-innr .roadmap-title-s2:before {
+        position: absolute;
+        content: '';
+        left: auto;
+        right: 1px  ;
+        transform: translateX(8px);
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #50251f;
+        border: 1px solid #50251f;
+    }
+
+    .roadmap-list .roadmap-item:last-child::after {
+       
+        transform: translateX(calc(-60% - 30px));
+    
+    }
+
+    
+}

@@ -4,37 +4,36 @@ import Preloader from './components/Preloader';
 import HeaderComponent from './components/HeaderComponent';
 import ResponsiveMenu from './components/ResponsiveMenu';
 import Hero from './components/Hero';
-import Team from './components/Team';
-import Story from './components/Story';
-import Mission from './components/Mission';
-import Roadmap from './components/Roadmap';
 import FooterComponent from './components/FooterComponent';
-import Mint from './components/Mint';
 
 import { GlobalProvider } from "./context/GlobalContext"
 import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Terms from './components/Terms';
 
 function App() {
   const [error, setError] = useState(false)
   const [errorMsg, setErrorMsg] = useState('')
 
   return (
-    <GlobalProvider>
-      <div className="App">
-        <Preloader />
-        <div className='main'>
-          <HeaderComponent error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />
-          <Hero />
-          <Story />
-          <Mission />
-          {/* <Team /> */}
-          {/* <Roadmap /> */}
-          {/* <Mint /> */}
-          {/* <FooterComponent /> */}
+    <BrowserRouter>
+      <GlobalProvider>
+        <div className="App">
+          <Preloader />
+          <div className='main'>
+            <HeaderComponent error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />
+            <Hero />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/terms' element={<Terms />} />
+            </Routes>
+            <FooterComponent />
+          </div>
+          <ResponsiveMenu />
         </div>
-        <ResponsiveMenu />
-      </div>
-    </GlobalProvider>
+      </GlobalProvider>
+    </BrowserRouter>
   );
 }
 

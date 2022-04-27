@@ -94,7 +94,7 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
             <nav data-aos="zoom-out" data-aos-delay="800" className="navbar navbar-expand">
                 <div className="container header">
                     {/* <!-- Navbar Brand--> */}
-                    <a className="navbar-brand pb-3" href="#home">
+                    <a className="navbar-brand pb-3" href="/">
                         <img className="navbar-brand-sticky" src={Logo} alt="sticky brand-logo" />
                     </a>
                     <div className="ml-auto"></div>

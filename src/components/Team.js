@@ -1,9 +1,9 @@
 import Member from "./Member"
-import Dear_Artist from './../images/Dear_Artist_Artist.jpg'
-import God_Ares_Head_Master from './../images/God_Ares_Head_Master.jpg'
-import Kazey_Developer from './../images/Kazey_Developer.jpg'
-import o_mai_goodness_Social_Media_Manager from './../images/o_mai_goodness_Social_Media_Manager.jpg'
-import Oske_Discord_Manager from './../images/Oske_Discord_Manager.jpg'
+import team1 from './../images/team(1).jpg'
+import team2 from './../images/team(2).jpg'
+import team3 from './../images/team(3).jpg'
+import team4 from './../images/team(4).jpg'
+import team5 from './../images/team(5).jpg'
 
 
 const Team = () => {
@@ -20,11 +20,11 @@ const Team = () => {
           </div>
         </div>
         <div className="row items justify-content-center">
-          <Member name="God Ares" designation="Head Master" image={God_Ares_Head_Master} />
-          <Member name="Dear Artist" designation="Artist" image={Dear_Artist} />
-          <Member name="Oske" designation="Discord Manager" image={Oske_Discord_Manager} />
-          <Member name="o_mai_goodness" designation="Social Media Manager" image={o_mai_goodness_Social_Media_Manager} />
-          <Member name="Kazey" designation="Developer" image={Kazey_Developer} />
+          <Member name="God Ares" designation="Head Master" image={team1} />
+          <Member name="Dear Artist" designation="Artist" image={team2} />
+          <Member name="Oske" designation="Discord Manager" image={team3} />
+          <Member name="o_mai_goodness" designation="Social Media Manager" image={team4} />
+          <Member name="Kazey" designation="Developer" image={team5} />
 
         </div>
 

@@ -1,4 +1,4 @@
-
+import "./card.css"
 const Member = ({name, designation, image }) => {
     return (
         <div className="col-12 col-sm-6 col-lg-4 item">
