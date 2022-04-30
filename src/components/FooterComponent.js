@@ -4,11 +4,14 @@ const FooterComponent = () => {
         <footer className="footer-area p-4">
             <div className="container">
 
-                <div className="row align-items-center justify-content-center">
+                <div className="row align-items-start justify-content-center">
                     <div className="col-12 col-md-4">
                         <div className="">
                             <div className="">
                                 <p className='text-md-left text-center'>Copyright &copy; {new Date().getFullYear()} - Chocolate Monkeys</p>
+                            </div>
+                            <div className="text-md-left text-center">
+                                <Link to="/terms" className="text-white">Terms and Conditions</Link>
                             </div>
                         </div>
                     </div>
@@ -25,10 +28,8 @@ const FooterComponent = () => {
                         </p>
                     </div>
                 </div>
-                <div className='row align-items-center justify-content-end'>
-                    <div className='col-12 text-md-right text-center tnc'>
-                        <Link to="/terms" >Terms and Conditions</Link>
-                    </div>
+                <div className='row align-items-center justify-content-start'>
+
                 </div>
 
 

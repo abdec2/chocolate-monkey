@@ -33,9 +33,9 @@ const ResponsiveMenu = () => {
                                 <li className="nav-item">
                                     <a href="#mint" className="nav-link" onClick={() => closeModal()}>Token</a>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <a href="#mint" className="nav-link" onClick={() => closeModal()}>The Charity</a>
-                                </li>
+                                </li> */}
                                 <li className="nav-item">
                                     <a href="#mint" className="nav-link" onClick={() => closeModal()}>Executive Board</a>
                                 </li>

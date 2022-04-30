@@ -116,9 +116,9 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                             <a href="#mint" className="nav-link">Token</a>
                         </li>
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <a href="#mint" className="nav-link">The Charity</a>
-                        </li>
+                        </li> */}
 
                         <li className="nav-item">
                             <a href="#mint" className="nav-link">Executive Board</a>
