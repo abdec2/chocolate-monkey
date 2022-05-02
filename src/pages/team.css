@@ -1,0 +1,17 @@
+.team-area .intro h3::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    font-size: 100px;
+    content: 'TEAM';
+    transform: translate(0%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+  
+  }
+
+  .brian img {
+      width: 150px;
+  }

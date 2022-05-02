@@ -4,6 +4,7 @@ import { GlobalContext } from "../context/GlobalContext";
 import Web3Modal from 'web3modal';
 import ABI from './../abi/abi.json';
 import CONFIG from './../abi/config.json'
+import { Link } from "react-router-dom";
 
 import Logo from './../images/logo.png'
 
@@ -94,26 +95,26 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
             <nav data-aos="zoom-out" data-aos-delay="800" className="navbar navbar-expand">
                 <div className="container header">
                     {/* <!-- Navbar Brand--> */}
-                    <a className="navbar-brand pb-3" href="/">
+                    <Link className="navbar-brand pb-3" to="/">
                         <img className="navbar-brand-sticky" src={Logo} alt="sticky brand-logo" />
-                    </a>
+                    </Link>
                     <div className="ml-auto"></div>
                     {/* <!-- Navbar --> */}
                     <ul className="navbar-nav items mx-auto">
                         <li className="nav-item dropdown">
-                            <a className="nav-link" href="#about">About</a>
+                            <Link className="nav-link" to="/">About</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#team" className="nav-link">Team</a>
+                            <Link to="/team" className="nav-link">Team</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#mint" className="nav-link">Mint</a>
+                            <Link to="/mint" className="nav-link">Mint</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#mint" className="nav-link">Token</a>
+                            <Link to="/token" className="nav-link">Token</Link>
                         </li>
 
                         {/* <li className="nav-item">
@@ -121,11 +122,11 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                         </li> */}
 
                         <li className="nav-item">
-                            <a href="#mint" className="nav-link">Executive Board</a>
+                            <Link to="/exteam" className="nav-link">Executive Team</Link>
                         </li>
 
                         <li className="nav-item">
-                            <a href="#mint" className="nav-link">Contact</a>
+                            <Link to="/contact" className="nav-link">Contact</Link>
                         </li>
 
                     </ul>

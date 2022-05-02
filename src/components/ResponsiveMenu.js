@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ResponsiveMenu = () => {
 
@@ -19,28 +20,28 @@ const ResponsiveMenu = () => {
                         <div className="row w-100">
                             <div className="items p-0 col-12 text-center">
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link" href="#about" onClick={() => closeModal()}>About</a>
+                                    <Link className="nav-link" to="/" onClick={() => closeModal()}>About</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a href="#team" className="nav-link" onClick={() => closeModal()}>Team</a>
+                                    <Link to="/team" className="nav-link" onClick={() => closeModal()}>Team</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a href="#roadmap" className="nav-link" onClick={() => closeModal()}>Mint</a>
+                                    <Link to="/mint" className="nav-link" onClick={() => closeModal()}>Mint</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <a href="#mint" className="nav-link" onClick={() => closeModal()}>Token</a>
+                                    <Link to="/token" className="nav-link" onClick={() => closeModal()}>Token</Link>
                                 </li>
                                 {/* <li className="nav-item">
-                                    <a href="#mint" className="nav-link" onClick={() => closeModal()}>The Charity</a>
+                                    <Link to="#mint" className="nav-link" onClick={() => closeModal()}>The Charity</Link>
                                 </li> */}
                                 <li className="nav-item">
-                                    <a href="#mint" className="nav-link" onClick={() => closeModal()}>Executive Board</a>
+                                    <Link to="/exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#mint" className="nav-link" onClick={() => closeModal()}>Contact</a>
+                                    <Link to="/contact" className="nav-link" onClick={() => closeModal()}>Contact</Link>
                                 </li>
                             </div>
                         </div>

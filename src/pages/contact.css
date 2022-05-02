@@ -1,0 +1,3 @@
+.btn-custom {
+    background-image: linear-gradient(150deg, var(--top-nav-item-color) 0%, var(--invalid-color) 78%) !important;
+}
