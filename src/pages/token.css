@@ -1,0 +1,38 @@
+.token-area .intro h3::before {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.03;
+    font-size: 100px;
+    content: 'CHOCO COIN';
+    transform: translate(0%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+  
+  }
+
+  .exchangeIcon {
+      border: 5px solid #e34f4f;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: url('./../images/Exchange.jpg') no-repeat;
+      background-position: center;
+      background-size: 110px 90px;
+      
+  }
+  .coinLink {
+      font-weight: bolder !important;
+      font-size: 21px !important;
+  }
+
+  .coinLink:hover .exchangeIcon {
+    border: 5px solid #50251f;
+  }
+
+  @media (max-width: 767px) {
+      .coinImage {
+          width: 50%;
+      }
+  }

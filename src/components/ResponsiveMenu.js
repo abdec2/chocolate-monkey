@@ -24,24 +24,24 @@ const ResponsiveMenu = () => {
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to="/team" className="nav-link" onClick={() => closeModal()}>Team</Link>
+                                    <Link to="team" className="nav-link" onClick={() => closeModal()}>Team</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to="/mint" className="nav-link" onClick={() => closeModal()}>Mint</Link>
+                                    <Link to="mint" className="nav-link" onClick={() => closeModal()}>Mint</Link>
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link to="/token" className="nav-link" onClick={() => closeModal()}>Token</Link>
+                                    <Link to="token" className="nav-link" onClick={() => closeModal()}>Token</Link>
                                 </li>
                                 {/* <li className="nav-item">
                                     <Link to="#mint" className="nav-link" onClick={() => closeModal()}>The Charity</Link>
                                 </li> */}
                                 <li className="nav-item">
-                                    <Link to="/exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>
+                                    <Link to="exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/contact" className="nav-link" onClick={() => closeModal()}>Contact</Link>
+                                    <Link to="contact" className="nav-link" onClick={() => closeModal()}>Contact</Link>
                                 </li>
                             </div>
                         </div>

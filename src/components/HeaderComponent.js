@@ -106,15 +106,15 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/team" className="nav-link">Team</Link>
+                            <Link to="team" className="nav-link">Team</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/mint" className="nav-link">Mint</Link>
+                            <Link to="mint" className="nav-link">Mint</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/token" className="nav-link">Token</Link>
+                            <Link to="token" className="nav-link">Token</Link>
                         </li>
 
                         {/* <li className="nav-item">
@@ -122,11 +122,11 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                         </li> */}
 
                         <li className="nav-item">
-                            <Link to="/exteam" className="nav-link">Executive Team</Link>
+                            <Link to="exteam" className="nav-link">Executive Team</Link>
                         </li>
 
                         <li className="nav-item">
-                            <Link to="/contact" className="nav-link">Contact</Link>
+                            <Link to="contact" className="nav-link">Contact</Link>
                         </li>
 
                     </ul>

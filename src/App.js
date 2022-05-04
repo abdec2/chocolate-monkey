@@ -15,6 +15,7 @@ import EXTeam from './components/Team'
 import Mint from './components/Mint'
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import { Token } from './pages/Token';
 
 function App() {
   const [error, setError] = useState(false)
@@ -30,11 +31,12 @@ function App() {
             <Hero />
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/exteam' element={<EXTeam />} />
-              <Route path='/mint' element={<Mint />} />
-              <Route path='/team' element={<Team />} />
-              <Route path='/terms' element={<Terms />} />
-              <Route path='/contact' element={<Contact />} />
+              <Route path='exteam' element={<EXTeam />} />
+              <Route path='mint' element={<Mint />} />
+              <Route path='team' element={<Team />} />
+              <Route path='terms' element={<Terms />} />
+              <Route path='token' element={<Token />} />
+              <Route path='contact' element={<Contact />} />
             </Routes>
             <FooterComponent />
           </div>
