@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Hero from '../components/Hero'
 import Preloader from './../components/Preloader'
 import "./contact.css"
 const Contact = () => {
@@ -37,6 +38,7 @@ const Contact = () => {
 
     return (
         <>
+            <Hero />
             {loading && (<Preloader />)}
             <section className="author-area">
                 <div className="container">

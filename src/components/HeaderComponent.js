@@ -117,13 +117,13 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                             <Link to="token" className="nav-link">Token</Link>
                         </li>
 
-                        {/* <li className="nav-item">
-                            <a href="#mint" className="nav-link">The Charity</a>
-                        </li> */}
-
                         <li className="nav-item">
-                            <Link to="exteam" className="nav-link">Executive Team</Link>
+                            <Link to="charity" className="nav-link">The Charity</Link>
                         </li>
+
+                        {/* <li className="nav-item">
+                            <Link to="exteam" className="nav-link">Executive Team</Link>
+                        </li> */}
 
                         <li className="nav-item">
                             <Link to="contact" className="nav-link">Contact</Link>

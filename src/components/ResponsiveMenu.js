@@ -34,12 +34,12 @@ const ResponsiveMenu = () => {
                                 <li className="nav-item">
                                     <Link to="token" className="nav-link" onClick={() => closeModal()}>Token</Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                    <Link to="#mint" className="nav-link" onClick={() => closeModal()}>The Charity</Link>
-                                </li> */}
                                 <li className="nav-item">
-                                    <Link to="exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>
+                                    <Link to="charity" className="nav-link" onClick={() => closeModal()}>The Charity</Link>
                                 </li>
+                                {/* <li className="nav-item">
+                                    <Link to="exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>
+                                </li> */}
                                 <li className="nav-item">
                                     <Link to="contact" className="nav-link" onClick={() => closeModal()}>Contact</Link>
                                 </li>

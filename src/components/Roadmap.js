@@ -17,13 +17,13 @@ const Roadmap = () => {
                             <div className="roadmap-item">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 500 (Charity 15%)</h6>
-                                    <p>We make our first donation to Make-a-Wish</p>
+                                    <p>We make our first donation to charity</p>
                                 </div>
                             </div>
                             <div className="roadmap-item roadmap-bottom">
                                 <div className="roadmap-innr">
-                                    <h6 className="roadmap-title roadmap-title-s2">Mints 1500 (Charity 15%)</h6>
-                                    <p>If you own more than one Monkey you will receive a unique prototype Chocolate Monkey NFT (these can be pretty weird)</p>
+                                    <h6 className="roadmap-title roadmap-title-s2">Mints 1500</h6>
+                                    <p>If you own more than three Monkeys you will receive a unique prototype Chocolate Monkey NFT (these can be pretty weird)</p>
                                 </div>
                             </div>
                             <div className="roadmap-item">
@@ -40,7 +40,7 @@ const Roadmap = () => {
 
                             <div className="roadmap-item">
                                 <div className="roadmap-innr">
-                                    <h6 className="roadmap-title roadmap-title-s2">Mint 3000 (Charity 15%)</h6>
+                                    <h6 className="roadmap-title roadmap-title-s2">Mint 3000</h6>
                                     <p>Two random owners will work with our artist to create their own special Chocolate Monkey NFT</p>
                                 </div>
                             </div>
@@ -48,6 +48,7 @@ const Roadmap = () => {
                             <div className="roadmap-item roadmap-bottom">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 3500</h6>
+                                    <p>The ChocolateSyndicate DAO Opens</p>
                                 </div>
                             </div>
 
@@ -93,28 +94,27 @@ const Roadmap = () => {
                             <div className="roadmap-item">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 8500</h6>
-                                    <p>Clue #3 Chocolate Monkeys Treasure Hunt</p>
+                                    <p>Random Airdrop of our Flying Chocolate Monkeys</p>
                                 </div>
                             </div>
 
                             <div className="roadmap-item roadmap-bottom">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 9000</h6>
-                                    <p>Metaverse NFT World purchased</p>
+                                    <p>Metaverse NFT Game released</p>
                                 </div>
                             </div>
 
                             <div className="roadmap-item">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 9500</h6>
-                                    <p>Clue #1 Chocolate Monkeys Treasure Hunt</p>
                                 </div>
                             </div>
 
                             <div className="roadmap-item roadmap-bottom">
                                 <div className="roadmap-innr">
                                     <h6 className="roadmap-title roadmap-title-s2">Mints 10000</h6>
-                                    <p>Something Here!</p>
+                                    <p>Chocolate Monkeys get a new friend!</p>
                                 </div>
                             </div>
 

@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import CONFIG from './../abi/config.json'
+import Hero from "./Hero";
 
 const Mint = () => {
     const {
@@ -51,52 +52,55 @@ const Mint = () => {
 
 
     return (
-        <section className="minting-area " id="mint">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-12 col-md-8 col-lg-7">
-                        <div className="intro text-center">
-                            <h3 className="mt-3 mb-0">MINT YOUR NFTs</h3>
+        <>
+            <Hero />
+            <section className="minting-area " id="mint">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-8 col-lg-7">
+                            <div className="intro text-center">
+                                <h3 className="mt-3 mb-0">MINT YOUR NFTs</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="row justify-content-center">
-                    <div className="col-12 col-md-8 col-lg-7">
-                        <div className="intro text-center">
-                            <a href={CONFIG.ETHERSCAN_URI + CONFIG.CONTRACT_ADDRESS} target="blank" className="mt-3 mb-0">{CONFIG.CONTRACT_ADDRESS.slice(0, 7) + '.......' + CONFIG.CONTRACT_ADDRESS.slice(35, 42)}</a>
+                    <div className="row justify-content-center">
+                        <div className="col-12 col-md-8 col-lg-7">
+                            <div className="intro text-center">
+                                <a href={CONFIG.ETHERSCAN_URI + CONFIG.CONTRACT_ADDRESS} target="blank" className="mt-3 mb-0">{CONFIG.CONTRACT_ADDRESS.slice(0, 7) + '.......' + CONFIG.CONTRACT_ADDRESS.slice(35, 42)}</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="row align-items-center justify-content-center">
-                    <div className="col-12 col-md-3">
-                        <div className="d-flex align-items-center justify-content-between">
-                            <div>
-                                <button className="btn ml-lg-auto btn-bordered-white" onClick={() => decrement()}> - </button>
+                    <div className="row align-items-center justify-content-center">
+                        <div className="col-12 col-md-3">
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <button className="btn ml-lg-auto btn-bordered-white" onClick={() => decrement()}> - </button>
+                                </div>
+                                <div> {mintCount} </div>
+                                <div>
+                                    <button className="btn ml-lg-auto btn-bordered-white" onClick={() => increment()}> + </button>
+                                </div>
                             </div>
-                            <div> {mintCount} </div>
-                            <div>
-                                <button className="btn ml-lg-auto btn-bordered-white" onClick={() => increment()}> + </button>
+                        </div>
+                    </div>
+                    <div className="row align-items-center justify-content-center mt-5">
+                        <div className="col-12 col-md-3">
+
+                            <div className="d-flex align-items-center justify-content-center">
+                                <div>
+                                    <button disabled={loading} className="btn ml-lg-auto btn-bordered-white" onClick={() => claimNFT()}> {loading ? "BUSY" : "BUY"} </button>
+                                </div>
+                                <div className="ml-3">
+                                    <a href={CONFIG.OPENSEA_URI + (account ? account : '')} target="blank" className="btn ml-lg-auto btn-bordered-white">Opensea</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row align-items-center justify-content-center mt-5">
-                    <div className="col-12 col-md-3">
-                        
-                        <div className="d-flex align-items-center justify-content-center">
-                            <div>
-                                <button disabled={loading} className="btn ml-lg-auto btn-bordered-white" onClick={() => claimNFT()}> {loading ? "BUSY" : "BUY"} </button>
-                            </div>
-                            <div className="ml-3">
-                                <a href={CONFIG.OPENSEA_URI+(account ? account : '')} target="blank" className="btn ml-lg-auto btn-bordered-white">Opensea</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 

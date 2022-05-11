@@ -3,7 +3,6 @@ import './App.css';
 import Preloader from './components/Preloader';
 import HeaderComponent from './components/HeaderComponent';
 import ResponsiveMenu from './components/ResponsiveMenu';
-import Hero from './components/Hero';
 import FooterComponent from './components/FooterComponent';
 
 import { GlobalProvider } from "./context/GlobalContext"
@@ -16,6 +15,7 @@ import Mint from './components/Mint'
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import { Token } from './pages/Token';
+import Charity from './pages/Charity';
 
 function App() {
   const [error, setError] = useState(false)
@@ -28,10 +28,10 @@ function App() {
           <Preloader />
           <div className='main'>
             <HeaderComponent error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />
-            <Hero />
             <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='exteam' element={<EXTeam />} />
+              {/* <Route path='exteam' element={<EXTeam />} /> */}
+              <Route path='charity' element={<Charity />} />
               <Route path='mint' element={<Mint />} />
               <Route path='team' element={<Team />} />
               <Route path='terms' element={<Terms />} />
