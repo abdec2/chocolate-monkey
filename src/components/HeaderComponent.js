@@ -34,7 +34,7 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                     console.log('contract', contract)
                 } catch (e) {
                     setError(true)
-                    setErrorMsg('Contract not deployed to current network, please change network in MetaMask')
+                    setErrorMsg('Contract not deployed to current network, please change network')
                 }
             }
         }
@@ -59,7 +59,7 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                     setErrorMsg('')
         } else {
             setError(true)
-            setErrorMsg('Contract not deployed to current network, please change network in MetaMask')
+            setErrorMsg('Contract not deployed to current network, please change network')
         }
         
     }
@@ -121,9 +121,9 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                             <Link to="charity" className="nav-link">The Charity</Link>
                         </li>
 
-                        {/* <li className="nav-item">
-                            <Link to="exteam" className="nav-link">Executive Team</Link>
-                        </li> */}
+                        <li className="nav-item">
+                            <a href="#" target="blank" className="nav-link">Whitepaper</a>
+                        </li>
 
                         <li className="nav-item">
                             <Link to="contact" className="nav-link">Contact</Link>

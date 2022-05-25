@@ -32,7 +32,7 @@ function App() {
               <Route path='/' element={<Home />} />
               {/* <Route path='exteam' element={<EXTeam />} /> */}
               <Route path='charity' element={<Charity />} />
-              <Route path='mint' element={<Mint />} />
+              <Route path='mint' element={<Mint error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />} />
               <Route path='team' element={<Team />} />
               <Route path='terms' element={<Terms />} />
               <Route path='token' element={<Token />} />
