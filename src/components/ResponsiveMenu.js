@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 const ResponsiveMenu = () => {
 
     const closeModal = () => {
-       document.querySelector('#menu').classList.remove('show')
-       document.querySelector('#menu').style.display = 'none'
-       document.querySelector('body').classList.remove('modal-open')
-       document.querySelector('.modal-backdrop').remove()
+        document.querySelector('#menu').classList.remove('show')
+        document.querySelector('#menu').style.display = 'none'
+        document.querySelector('body').classList.remove('modal-open')
+        document.querySelector('.modal-backdrop').remove()
     }
     return (
         <div id="menu" className="modal fade p-0">
@@ -36,6 +36,10 @@ const ResponsiveMenu = () => {
                                 </li>
                                 <li className="nav-item">
                                     <Link to="charity" className="nav-link" onClick={() => closeModal()}>The Charity</Link>
+                                </li>
+
+                                <li className="nav-item">
+                                    <a href="./ChocolateMonkeyWP.pdf" target="blank" className="nav-link">Whitepaper</a>
                                 </li>
                                 {/* <li className="nav-item">
                                     <Link to="exteam" className="nav-link" onClick={() => closeModal()}>Executive Team</Link>

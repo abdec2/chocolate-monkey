@@ -122,7 +122,7 @@ const HeaderComponent = ({ error, errorMsg, setError , setErrorMsg}) => {
                         </li>
 
                         <li className="nav-item">
-                            <a href="#" target="blank" className="nav-link">Whitepaper</a>
+                            <a href="./ChocolateMonkeyWP.pdf" target="blank" className="nav-link">Whitepaper</a>
                         </li>
 
                         <li className="nav-item">
