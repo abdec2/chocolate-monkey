@@ -5,7 +5,17 @@ import Web3Modal from 'web3modal';
 import CONFIG from './../abi/config.json'
 import ABI from './../abi/abi.json';
 import Hero from "./Hero";
+import WalletConnectProvider from "@walletconnect/web3-provider";
 
+const providerOptions = {
+    walletconnect: {
+      package: WalletConnectProvider, // required
+      options: {
+        infuraId: process.env.REACT_APP_INFURA_PROJECT_ID // required
+      }
+    }
+};
+  
 const contractAddress = CONFIG.CONTRACT_ADDRESS;
 
 const Mint = ({ error, errorMsg, setError, setErrorMsg }) => {
@@ -45,7 +55,9 @@ const Mint = ({ error, errorMsg, setError, setErrorMsg }) => {
             alert('Please install MetaMask');
             return
         }
-        const web3modal = new Web3Modal();
+        const web3modal = new Web3Modal({
+            providerOptions
+        });
         const instance = await web3modal.connect();
         const provider = new ethers.providers.Web3Provider(instance);
         const signer = provider.getSigner();
