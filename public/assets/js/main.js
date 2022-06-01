@@ -24,14 +24,21 @@
 /*----------------------------------------------
 1. Preloader
 ----------------------------------------------*/
-(function ($) {
-    'use strict';
+// (function ($) {
+//     'use strict';
 
-    $(window).on('load', function() {
-        $('#netstorm-preloader').addClass('loaded');
-    })
+//     $(window).on('load', function() {
+//         $('#netstorm-preloader').addClass('loaded');
+//     })
 
-}(jQuery));
+// }(jQuery));
+
+// (function() {
+//     window.onload = function() {
+//         document.querySelector('#netstorm-preloader').classList.add('loaded');
+//     }
+// })();
+
 
 /*----------------------------------------------
 2. Responsive Menu

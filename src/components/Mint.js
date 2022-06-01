@@ -51,10 +51,6 @@ const Mint = ({ error, errorMsg, setError, setErrorMsg }) => {
     }
 
     const connectWallet = async () => {
-        if (!window.ethereum) {
-            alert('Please install MetaMask');
-            return
-        }
         const web3modal = new Web3Modal({
             providerOptions
         });

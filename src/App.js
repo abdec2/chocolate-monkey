@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <GlobalProvider>
         <div className="App">
-          <Preloader />
+          {/* <Preloader /> */}
           <div className='main'>
             <HeaderComponent error={error} errorMsg={errorMsg} setError={setError} setErrorMsg={setErrorMsg} />
             <Routes>
