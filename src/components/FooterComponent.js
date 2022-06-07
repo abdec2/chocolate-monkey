@@ -8,7 +8,7 @@ const FooterComponent = () => {
                     <div className="col-12 col-md-6">
                         <div className="">
                             <div className="">
-                                <p className='text-md-left text-center'>Copyright &copy; {new Date().getFullYear()} - Chocolate Monkeys</p>
+                                <p className='text-md-left text-center'>Copyright &copy; {new Date().getFullYear()} - SwayMobStudios</p>
                             </div>
                             <div className="text-md-left text-center">
                                 <Link to="/terms" className="text-white">Terms and Conditions</Link>
